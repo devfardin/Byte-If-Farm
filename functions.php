@@ -53,7 +53,7 @@ function irisx_theme_enqueue_frontend_scripts() {
 		filemtime( IRIS_THEME_DIR . '/assets/css/single-popular-blog-posts.css' ),
 	);
 	wp_register_style(
-		'iris_cleaning_services_reviews',
+		'byteitfarm_customer_reviews',
 		IRIS_THEME_URL . '/assets/css/reviews.css',
 		array(),
 		filemtime( IRIS_THEME_DIR . '/assets/css/reviews.css' ),

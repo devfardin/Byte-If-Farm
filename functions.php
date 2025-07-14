@@ -14,18 +14,30 @@ require_once( IRIS_THEME_DIR . '/includes/shortcodes/single-popular-blog-posts.p
 require_once( IRIS_THEME_DIR . '/includes/shortcodes/view-counter.php');
 require_once( IRIS_THEME_DIR . '/includes/shortcodes/reviews.php');
 require_once( IRIS_THEME_DIR . '/includes/shortcodes/latest-reviews.php');
+require_once( IRIS_THEME_DIR . '/includes/shortcodes/latest-posts.php');
 
 
 /** 
  * Frontend Styles and Scripts
  */
 function irisx_theme_enqueue_frontend_scripts() {
+
+	// Enqueue style  for applying style
+
 	wp_enqueue_style(
-		'iris_main_style',
+		'byte_it_farm_main_style',
 		IRIS_THEME_URL . '/assets/css/main.css',
 		array(),
 		filemtime( IRIS_THEME_DIR . '/assets/css/main.css' ),
 	);
+	wp_enqueue_style(
+		'home_page_style',
+		IRIS_THEME_URL . '/assets/css/home-page-style.css',
+		array(),
+		filemtime( IRIS_THEME_DIR . '/assets/css/home-page-style.css' ),
+	);
+
+
 	// Register blog post style
 	wp_register_style(
 		'iris_blog_posts',
@@ -57,6 +69,12 @@ function irisx_theme_enqueue_frontend_scripts() {
 		IRIS_THEME_URL . '/assets/css/reviews.css',
 		array(),
 		filemtime( IRIS_THEME_DIR . '/assets/css/reviews.css' ),
+	);
+	wp_register_style(
+		'byteitfarm_latest_blog_posts',
+		IRIS_THEME_URL . '/assets/css/latest-blog-posts.css',
+		array(),
+		filemtime( IRIS_THEME_DIR . '/assets/css/latest-blog-posts.css' ),
 	);
 
 }

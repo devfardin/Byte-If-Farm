@@ -156,6 +156,37 @@ input.choices__input.choices__input--cloned {
     min-width: 100% !important;
     border: none !important;
 }
+
+/**************
+Header style
+**************/
+
+section.elementor-section.elementor-inner-section.elementor-element.elementor-element-2bb93300.elementor-section-content-middle.she-header-yes.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default.she-header {
+    width: 100%;
+    position: relative !important;
+    top: 0 !important;
+    background: white;
+    margin-top: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+section.elementor-section.elementor-inner-section.elementor-element.elementor-element-2bb93300.elementor-section-content-middle.she-header-yes.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default.she-header .elementor-widget-wrap.elementor-element-populated .elementor-element.elementor-element-01f94fd.elementor-widget.elementor-widget-ekit-nav-menu nav.ekit-wid-con.ekit_menu_responsive_tablet ul#menu-main-menu li .ekit-menu-nav-link {
+    color: black;
+}
+section.elementor-section.elementor-inner-section.elementor-element.elementor-element-2bb93300.elementor-section-content-middle.she-header-yes.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default.she-header .elementor-widget-wrap.elementor-element-populated .elementor-element.elementor-element-01f94fd.elementor-widget.elementor-widget-ekit-nav-menu nav.ekit-wid-con.ekit_menu_responsive_tablet ul#menu-main-menu li .active{
+    color: var(--e-global-color-primary);
+}
+section.elementor-section.elementor-inner-section.elementor-element.elementor-element-2bb93300.elementor-section-content-middle.she-header-yes.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default.header.she-header-transparent-yes{
+    background: rgba(255, 255, 255, 0.12) !important; 
+    border-radius: 12px !important;
+    -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+    -webkit-backdrop-filter: blur(5px) !important;
+    backdrop-filter: blur(5px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+
 /* -------------------------------- animations -------------------------------- */
 .MoveUpDown{animation: MoveUpDown 2s linear infinite }
 @keyframes MoveUpDown {

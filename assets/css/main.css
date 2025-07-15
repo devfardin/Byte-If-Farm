@@ -122,7 +122,6 @@
 
 .ff-default .ff_btn_style {
     background-color: var(--e-global-color-primary) !important;
-    font-family: "Montserrat", Sans-serif;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2em;
@@ -186,6 +185,18 @@ section.elementor-section.elementor-inner-section.elementor-element.elementor-el
     border: 1px solid rgba(255, 255, 255, 0.12) !important;
 }
 
+/* General Hover animation */
+.feature_item {
+    -webkit-transition: 0.3s !important;
+    cursor: pointer;
+}
+
+
+.feature_item:hover {
+    cursor: pointer;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
 
 /* -------------------------------- animations -------------------------------- */
 .MoveUpDown{animation: MoveUpDown 2s linear infinite }

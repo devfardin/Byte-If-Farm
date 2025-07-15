@@ -1,4 +1,3 @@
-
 <?php
 function rander_byteit_latest_post()
 {
@@ -58,9 +57,11 @@ function rander_byteit_latest_post()
                                     </div>
                                 </div>
                                 <div class="latest-post__title">
-                                    <h1><?php echo substr(get_the_title(), 0, 70); ?>...</h1>
+                                    <h1><?php echo substr(get_the_title(), 0, 35); ?>...</h1>
+                                    <P><?php echo substr(get_the_excerpt(), 0, 100) ?></P>
                                     <a class="lates-post__read_more" href="<?php the_permalink(); ?>">
                                         Read More
+                                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg>
                                     </a>
                                 </div>
                             </div>

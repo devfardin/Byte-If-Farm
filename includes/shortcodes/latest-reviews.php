@@ -17,7 +17,7 @@ function byteitfarm_customer_latest_reviews()
                 <div class="byteitfarm_revews__row">
                     <?php while ($query->have_posts()):
                         $query->the_post(); ?>
-                        <div class="byteitfarm_innter_container">
+                        <div class="byteitfarm_innter_container feature_item">
                             <div>
                                 <!-- client rating START -->
                                 <div class="client_rating">

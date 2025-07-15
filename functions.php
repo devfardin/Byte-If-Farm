@@ -1,21 +1,21 @@
 <?php
-define( 'IRIS_THEME_DIR', __DIR__ );
-define( 'IRIS_THEME_URL', get_stylesheet_directory_uri() );
+define( 'BYTEITFARM_THEME_DIR', __DIR__ );
+define( 'BYTEITFARM_THEME_URL', get_stylesheet_directory_uri() );
 
 // Theme shortcode
-require_once( IRIS_THEME_DIR . '/includes/shortcodes/blog-posts.php');
-require_once( IRIS_THEME_DIR . '/includes/shortcodes/categories-posts.php');
-require_once( IRIS_THEME_DIR . '/includes/shortcodes/author-post.php');
-require_once( IRIS_THEME_DIR . '/includes/shortcodes/search-posts.php');
-require_once( IRIS_THEME_DIR . '/includes/shortcodes/single-post-title.php');
-require_once( IRIS_THEME_DIR . '/includes/shortcodes/single-post-details.php');
-require_once( IRIS_THEME_DIR . '/includes/shortcodes/single-post-categories.php');
-require_once( IRIS_THEME_DIR . '/includes/shortcodes/single-popular-blog-posts.php');
-require_once( IRIS_THEME_DIR . '/includes/shortcodes/view-counter.php');
-require_once( IRIS_THEME_DIR . '/includes/shortcodes/reviews.php');
-require_once( IRIS_THEME_DIR . '/includes/shortcodes/latest-reviews.php');
-require_once( IRIS_THEME_DIR . '/includes/shortcodes/latest-posts.php');
-
+require_once( BYTEITFARM_THEME_DIR . '/includes/shortcodes/blog-posts.php');
+require_once( BYTEITFARM_THEME_DIR . '/includes/shortcodes/categories-posts.php');
+require_once( BYTEITFARM_THEME_DIR . '/includes/shortcodes/author-post.php');
+require_once( BYTEITFARM_THEME_DIR . '/includes/shortcodes/search-posts.php');
+require_once( BYTEITFARM_THEME_DIR . '/includes/shortcodes/single-post-title.php');
+require_once( BYTEITFARM_THEME_DIR . '/includes/shortcodes/single-post-details.php');
+require_once( BYTEITFARM_THEME_DIR . '/includes/shortcodes/single-post-categories.php');
+require_once( BYTEITFARM_THEME_DIR . '/includes/shortcodes/single-popular-blog-posts.php');
+require_once( BYTEITFARM_THEME_DIR . '/includes/shortcodes/view-counter.php');
+require_once( BYTEITFARM_THEME_DIR . '/includes/shortcodes/reviews.php');
+require_once( BYTEITFARM_THEME_DIR . '/includes/shortcodes/latest-reviews.php');
+require_once( BYTEITFARM_THEME_DIR . '/includes/shortcodes/latest-posts.php');
+require_once( BYTEITFARM_THEME_DIR . '/includes/setup.php' );
 
 /** 
  * Frontend Styles and Scripts
@@ -26,55 +26,55 @@ function irisx_theme_enqueue_frontend_scripts() {
 
 	wp_enqueue_style(
 		'byte_it_farm_main_style',
-		IRIS_THEME_URL . '/assets/css/main.css',
+		BYTEITFARM_THEME_URL . '/assets/css/main.css',
 		array(),
-		filemtime( IRIS_THEME_DIR . '/assets/css/main.css' ),
+		filemtime( BYTEITFARM_THEME_DIR . '/assets/css/main.css' ),
 	);
 	wp_enqueue_style(
 		'home_page_style',
-		IRIS_THEME_URL . '/assets/css/home-page-style.css',
+		BYTEITFARM_THEME_URL . '/assets/css/home-page-style.css',
 		array(),
-		filemtime( IRIS_THEME_DIR . '/assets/css/home-page-style.css' ),
+		filemtime( BYTEITFARM_THEME_DIR . '/assets/css/home-page-style.css' ),
 	);
 
 
 	// Register blog post style
 	wp_register_style(
 		'iris_blog_posts',
-		IRIS_THEME_URL . '/assets/css/blog-posts.css',
+		BYTEITFARM_THEME_URL . '/assets/css/blog-posts.css',
 		array(),
-		filemtime( IRIS_THEME_DIR . '/assets/css/blog-posts.css' ),
+		filemtime( BYTEITFARM_THEME_DIR . '/assets/css/blog-posts.css' ),
 	);
 
 	wp_register_style(
 		'iris_single_post_style',
-		IRIS_THEME_URL . '/assets/css/single-posts.css',
+		BYTEITFARM_THEME_URL . '/assets/css/single-posts.css',
 		array(),
-		filemtime( IRIS_THEME_DIR . '/assets/css/single-posts.css' ),
+		filemtime( BYTEITFARM_THEME_DIR . '/assets/css/single-posts.css' ),
 	);
 	wp_register_style(
 		'iris_single_post_categories',
-		IRIS_THEME_URL . '/assets/css/single-post-categories.css',
+		BYTEITFARM_THEME_URL . '/assets/css/single-post-categories.css',
 		array(),
-		filemtime( IRIS_THEME_DIR . '/assets/css/single-post-categories.css' ),
+		filemtime( BYTEITFARM_THEME_DIR . '/assets/css/single-post-categories.css' ),
 	);
 	wp_register_style(
 		'iris_single_popular_blog_post',
-		IRIS_THEME_URL . '/assets/css/single-popular-blog-posts.css',
+		BYTEITFARM_THEME_URL . '/assets/css/single-popular-blog-posts.css',
 		array(),
-		filemtime( IRIS_THEME_DIR . '/assets/css/single-popular-blog-posts.css' ),
+		filemtime( BYTEITFARM_THEME_DIR . '/assets/css/single-popular-blog-posts.css' ),
 	);
 	wp_register_style(
 		'byteitfarm_customer_reviews',
-		IRIS_THEME_URL . '/assets/css/reviews.css',
+		BYTEITFARM_THEME_URL . '/assets/css/reviews.css',
 		array(),
-		filemtime( IRIS_THEME_DIR . '/assets/css/reviews.css' ),
+		filemtime( BYTEITFARM_THEME_DIR . '/assets/css/reviews.css' ),
 	);
 	wp_register_style(
 		'byteitfarm_latest_blog_posts',
-		IRIS_THEME_URL . '/assets/css/latest-blog-posts.css',
+		BYTEITFARM_THEME_URL . '/assets/css/latest-blog-posts.css',
 		array(),
-		filemtime( IRIS_THEME_DIR . '/assets/css/latest-blog-posts.css' ),
+		filemtime( BYTEITFARM_THEME_DIR . '/assets/css/latest-blog-posts.css' ),
 	);
 
 }

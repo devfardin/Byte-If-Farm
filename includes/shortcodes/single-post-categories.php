@@ -1,4 +1,9 @@
 <?php
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
 function iris_render_single_post_categories(){
     ob_start();
     wp_enqueue_style("iris_single_post_categories");

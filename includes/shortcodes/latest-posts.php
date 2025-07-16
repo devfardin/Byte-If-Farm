@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
 function rander_byteit_latest_post()
 {
     ob_start(); ?>
@@ -17,6 +20,7 @@ function rander_byteit_latest_post()
     <section class="latest-posts">
         <div class="latest-posts__container">
             <?php if ($query->have_posts()): ?>
+                <!-- Get all post here  -->
                 <!-- Get all post here  -->
                 <div class="latest-posts__row">
                     <?php while ($query->have_posts()):
@@ -61,7 +65,12 @@ function rander_byteit_latest_post()
                                     <P><?php echo substr(get_the_excerpt(), 0, 100) ?></P>
                                     <a class="lates-post__read_more" href="<?php the_permalink(); ?>">
                                         Read More
-                                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg>
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z">
+                                            </path>
+                                        </svg>
                                     </a>
                                 </div>
                             </div>

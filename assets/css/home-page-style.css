@@ -43,7 +43,7 @@
 }
 
 .feature_item .sticker:before {
-    background: #09DC1E;
+    background: var(--e-global-color-primary);
     position: absolute;
     content: " ";
     -webkit-transform: skew(-14deg);

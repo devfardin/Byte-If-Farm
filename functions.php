@@ -41,6 +41,12 @@ function irisx_theme_enqueue_frontend_scripts() {
 		array(),
 		filemtime( BYTEITFARM_THEME_DIR . '/assets/css/home-page-style.css' ),
 	);
+	wp_enqueue_style(
+		'about-page-style.css',
+		BYTEITFARM_THEME_URL . '/assets/css/about-page-style.css',
+		array(),
+		filemtime( BYTEITFARM_THEME_DIR . '/assets/css/about-page-style.css' ),
+	);
 
 
 	// Register blog post style

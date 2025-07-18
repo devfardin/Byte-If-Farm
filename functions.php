@@ -13,13 +13,15 @@ require_once( BYTEITFARM_THEME_DIR . '/includes/shortcodes/author-post.php');
 require_once( BYTEITFARM_THEME_DIR . '/includes/shortcodes/search-posts.php');
 require_once( BYTEITFARM_THEME_DIR . '/includes/shortcodes/single-post-title.php');
 require_once( BYTEITFARM_THEME_DIR . '/includes/shortcodes/single-post-details.php');
-require_once( BYTEITFARM_THEME_DIR . '/includes/shortcodes/single-post-categories.php');
 require_once( BYTEITFARM_THEME_DIR . '/includes/shortcodes/single-popular-blog-posts.php');
 require_once( BYTEITFARM_THEME_DIR . '/includes/shortcodes/view-counter.php');
 require_once( BYTEITFARM_THEME_DIR . '/includes/shortcodes/reviews.php');
 require_once( BYTEITFARM_THEME_DIR . '/includes/shortcodes/latest-reviews.php');
 require_once( BYTEITFARM_THEME_DIR . '/includes/shortcodes/latest-posts.php');
 require_once( BYTEITFARM_THEME_DIR . '/includes/shortcodes/search-form.php');
+require_once( BYTEITFARM_THEME_DIR . '/includes/shortcodes/categories-lists.php');
+require_once( BYTEITFARM_THEME_DIR . '/includes/shortcodes/post_view_counter.php');
+require_once( BYTEITFARM_THEME_DIR . '/includes/shortcodes/most_popular_posts.php');
 require_once( BYTEITFARM_THEME_DIR . '/includes/setup.php' );
 
 /** 
@@ -64,7 +66,7 @@ function irisx_theme_enqueue_frontend_scripts() {
 	);
 
 	wp_register_style(
-		'iris_single_post_style',
+		'byteitfarm_single_post_style',
 		BYTEITFARM_THEME_URL . '/assets/css/single-posts.css',
 		array(),
 		filemtime( BYTEITFARM_THEME_DIR . '/assets/css/single-posts.css' ),
@@ -76,7 +78,7 @@ function irisx_theme_enqueue_frontend_scripts() {
 		filemtime( BYTEITFARM_THEME_DIR . '/assets/css/single-post-categories.css' ),
 	);
 	wp_register_style(
-		'iris_single_popular_blog_post',
+		'byteitfarm_single_popular_blog_post',
 		BYTEITFARM_THEME_URL . '/assets/css/single-popular-blog-posts.css',
 		array(),
 		filemtime( BYTEITFARM_THEME_DIR . '/assets/css/single-popular-blog-posts.css' ),
@@ -98,6 +100,12 @@ function irisx_theme_enqueue_frontend_scripts() {
 		BYTEITFARM_THEME_URL . '/assets/css/search-form.css',
 		array(),
 		filemtime( BYTEITFARM_THEME_DIR . '/assets/css/search-form.css' ),
+	);
+	wp_register_style(
+		'byteitfarm_most_popular_posts',
+		BYTEITFARM_THEME_URL . '/assets/css/most-popular-posts.css',
+		array(),
+		filemtime( BYTEITFARM_THEME_DIR . '/assets/css/most-popular-posts.css' ),
 	);
 
 }

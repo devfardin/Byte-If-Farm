@@ -122,18 +122,18 @@
     line-height: 1.1em;
     background: var(--e-global-color-accent);
     color: var(--e-global-color-91498c0);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     display: inline-flex;
     gap: 5px;
     align-items: center;
     text-align: center;
     border-radius: 50px;
-    padding: 12px 30px;
+    padding: 10px 20px;
     transition: 0.4s;
     border: 1px solid var(--e-global-color-accent);
     stroke: var(--e-global-color-91498c0);
-    margin-top: 10px !important;
+    margin-top: 12px !important;
 }
 
 .lates-post__read_more svg {

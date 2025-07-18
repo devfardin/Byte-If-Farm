@@ -4,19 +4,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-function rander_iris_single_post_details()
+function rander_byteitfarm_single_post_details()
 {
     ob_start();
-    wp_enqueue_style("iris_single_post_style"); ?>
+    wp_enqueue_style("byteitfarm_single_post_style"); ?>
 
     <?php if (is_single()): ?>
-        <section class="iris_single_post_container">
+        <section class="byteitfarm_single_post_container">
             <!-- single post feature image -->
-            <div class="iris_single_post_feature">
+            <div class="byteitfarm_single_post_feature">
                 <?php echo the_post_thumbnail(''); ?>
             </div>
             <!-- single post category and date wrapper-->
-            <div class="iris_single_post_category_date_wrapper">
+            <div class="byteitfarm_single_post_category_date_wrapper">
                 <!-- single category -->
                 <div class="single_post_category">
                     <?php
@@ -37,7 +37,7 @@ function rander_iris_single_post_details()
                 </div>
             </div>
             <!-- single post container -->
-            <div class="iris_single_post_content">
+            <div class="byteitfarm_single_post_content">
                 <?php echo get_the_content(); ?>
             </div>
             <!-- single post comment box -->
@@ -49,4 +49,4 @@ function rander_iris_single_post_details()
     <?php endif; ?>
     <?php return ob_get_clean();
 }
-add_shortcode('iris_single_post_details', 'rander_iris_single_post_details');
+add_shortcode('byteitfarm_single_post_details', 'rander_byteitfarm_single_post_details');

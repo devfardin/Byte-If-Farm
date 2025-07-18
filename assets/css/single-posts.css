@@ -1,11 +1,11 @@
-.iris_single_post_container .iris_single_post_feature img {
+.byteitfarm_single_post_container .byteitfarm_single_post_feature img {
     width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 15px;
 }
 
-.iris_single_post_container .iris_single_post_category_date_wrapper {
+.byteitfarm_single_post_container .byteitfarm_single_post_category_date_wrapper {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -13,40 +13,44 @@
     justify-content: space-between;
 }
 @media only screen and (min-width:425px) {
-    .iris_single_post_container .iris_single_post_category_date_wrapper{
+    .byteitfarm_single_post_container .byteitfarm_single_post_category_date_wrapper{
         flex-direction: row;
         gap: 10px;
     }
 }
 
-.iris_single_post_category_date_wrapper .single_post_category a{
-    font-family: "Montserrat", Sans-serif;
+.byteitfarm_single_post_category_date_wrapper .single_post_category a{
     font-size: 18px;
     font-weight: 500;
     line-height: 0.7em;
-    color: var(--e-global-color-primary);
-    background: var(--e-global-color-secondary);
+    color: var(--e-global-color-91498c0);
+    background: var(--e-global-color-primary);
     padding:10px 20px;
     border-radius: 5px;
     transition: 0.3s;
 }
-.iris_single_post_category_date_wrapper .single_post_category a:hover{
+.byteitfarm_single_post_category_date_wrapper .single_post_category a:hover{
     background: var(--e-global-color-primary);
     color: white;
 }
-.iris_single_post_category_date_wrapper .single_post_date_time span {
+.byteitfarm_single_post_category_date_wrapper .single_post_date_time span {
     font-size: 18px;
     font-weight: 400;
-    font-family: 'Montserrat';
     color: rgb(48 49 52);
 }
-.iris_single_post_container .iris_single_post_content p{
+.byteitfarm_single_post_container .byteitfarm_single_post_content {
     color: rgba(0, 0, 0, 0.60);
-    font-family: 'Montserrat';
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.6em; 
+    line-height: 1.7em; 
+}
+.byteitfarm_single_post_container .byteitfarm_single_post_content p {
+    color: rgba(0, 0, 0, 0.60);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7em; 
 }
 
 /* Comment box style */
@@ -69,13 +73,11 @@
 }
  .single_post_comment_box .comment-form label {
     color:  #010101;
-    font-family: 'Montserrat';
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 28px; /* 155.556% */
 }
-
 
 .comment-form input {
     padding: 13px !important;
@@ -91,7 +93,6 @@
 }
 .comment-form textarea {
     height: 150px;
-    font-family: 'Montserrat';
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 14px !important;
@@ -108,7 +109,6 @@
     padding: 16px 50px;
     justify-content: center;
     color:#ffffff;
-    font-family: 'Montserrat';
     font-weight: 500;
     align-items: center;
     border-radius: 8px;
@@ -136,7 +136,6 @@
 
 .comment-author.vcard .fn a {
     color: #010101c4;
-    font-family: 'Montserrat';
     font-size: 21px;
     font-style: normal;
     font-weight: 500;
@@ -147,7 +146,6 @@
 }
 .comment-metadata a {
     color: #010101c7;
-    font-family: 'Montserrat';
     font-size: 14px;
     font-style: normal;
     font-weight: 500;

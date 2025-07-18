@@ -1,8 +1,8 @@
 <?php
-function byteitfarm_view_counter(){
-    ob_start(); ?>
-
-    <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+function tri_view_counter(){
     $countKey = 'post_views_count';
     $count = get_post_meta(get_the_ID(), $countKey, true);
     if($count==''){
@@ -13,9 +13,6 @@ function byteitfarm_view_counter(){
         $count++;
         update_post_meta(get_the_ID(), $countKey, $count);
     };
-    ?>
-
-    <?php
-     return ob_get_clean();
+   return '';
 }
-add_shortcode( 'view_counter', 'byteitfarm_view_counter' );
+add_shortcode( 'view_counter', 'tri_view_counter' );

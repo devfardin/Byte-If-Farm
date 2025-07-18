@@ -20,7 +20,7 @@ get_header();
 ?>
 <div class="cfx-body">
     <div id="content">
-        <?php echo \Elementor\Plugin::instance()->frontend->get_builder_content_for_display(487); ?>
+        <?php echo \Elementor\Plugin::instance()->frontend->get_builder_content_for_display(807); ?>
     </div>
 </div>
 

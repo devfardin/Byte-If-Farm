@@ -16,7 +16,7 @@
 .contact_information li strong {
     color: var( --e-global-color-text);
     opacity: 0.9;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
 }
 .contact_information li span {
@@ -26,7 +26,7 @@
     list-style: disc;
 }
 .contact_information li a {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 500;
     color: var(--e-global-color-text);
     transition: all 0.3s;

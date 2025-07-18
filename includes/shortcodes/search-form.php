@@ -35,7 +35,7 @@ function custom_search_in_post()
 
 
 
-<?php
-return ob_get_clean();
+  <?php
+  return ob_get_clean();
 }
 add_shortcode('byteitfarm_post_search', 'custom_search_in_post');

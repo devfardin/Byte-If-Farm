@@ -89,6 +89,7 @@
 .latest-post__category span:hover {
     background-color: var(--e-global-color-primary);
     color: white;
+    cursor: pointer;
 }
 
 .latest-post__title {
@@ -104,10 +105,6 @@
     line-height: 1.4;
     transition: 0.3s;
     cursor: pointer;
-}
-
-.latest-post__title h1:hover {
-    color: var(--e-global-color-primary);
 }
 
 .latest-post__title p {

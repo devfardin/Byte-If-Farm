@@ -1,0 +1,38 @@
+
+/* Service Section Start */
+#services_container_wraper>.elementor-container.elementor-column-gap-default {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+	column-gap:10px;
+}
+/* Responsive for Tab */
+@media only screen and (min-width:768px){
+#services_container_wraper>.elementor-container.elementor-column-gap-default {
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+/* Responsive for desktop */
+@media only screen and (min-width:992px){
+#services_container_wraper>.elementor-container.elementor-column-gap-default {
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+#services_container_wraper .elementor-inner-column {
+    width: 100% !important;
+} 
+.service_container{
+	cursor:pointer;
+}
+.service_container img{
+    transition: transform 0.3s;
+}
+.service_container:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+	overflow:hidden;
+}
+.service_over_img .elementor-widget-container {
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 1px;
+}

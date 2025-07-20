@@ -1,0 +1,38 @@
+/* fluent form style */
+.fluentform input, textarea, select {
+    border-radius: 0 !important;
+    padding: 15px !important;
+    font-size: 18px;
+}
+.fluentform input:focus {
+    border-color: var(--e-global-color-primary) !important;
+}
+.fluentform select:focus {
+    border-color: var(--e-global-color-primary) !important;
+}
+.fluentform textarea:focus {
+    border-color: var(--e-global-color-primary) !important;
+}
+.fluentform .ff-btn-submit{
+	background: var(--e-global-color-primary) !important;
+	border-radius: 0 !important;
+		font-size: 18px !important;
+	font-weight: 500 !important;
+	padding: 12px 25px !important;
+}
+
+
+
+.service_items .ff-el-input--content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+}
+
+@media only screen and (min-width:768px) {
+	.service_items .ff-el-input--content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+}

@@ -1,7 +1,7 @@
 .most_popular_post_container {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     justify-content: space-between;
     align-items: center;
 }
@@ -10,14 +10,17 @@
     display: grid;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 10px;
 }
-
 /* Image in column 1 */
 .most_popular_post_wrapper .popular_post_thumb {
     grid-column: 1 / 2;
 }
-
+.most_popular_post_wrapper .popular_post_thumb a img {
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+}
 
 .most_popular_post_wrapper .popular_post_thumb a img {
     width: 100%;
@@ -28,5 +31,13 @@
     grid-column: 2 / 4; /* Spans columns 2 and 3 */
     display: flex;
     flex-direction: column;
-    gap: 5px; 
+    gap: 15px;
+    justify-content: space-between !important;
 }
+.most_popular_post_info a {
+   font-size: 18px;
+   font-weight: 400;
+   color: var(--e-global-color-text);
+   line-height: 1.3em;
+}
+

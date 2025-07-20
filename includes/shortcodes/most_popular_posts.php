@@ -6,7 +6,7 @@ if (!defined('ABSPATH')) {
 function most_popular_posts()
 {
     ob_start();
-    wp_enqueue_style('byteitfarm_single_popular_blog_post');
+    wp_enqueue_style('byteitfarm_popular_blog_posts');
     $popularpost = new WP_Query(array(
         'posts_per_page' => 6,
         'post_type' => 'post',

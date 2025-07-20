@@ -55,6 +55,18 @@ function irisx_theme_enqueue_frontend_scripts() {
 		array(),
 		filemtime( BYTEITFARM_THEME_DIR . '/assets/css/blog-page-style.css' ),
 	);
+	wp_enqueue_style(
+		'services-page-style.css',
+		BYTEITFARM_THEME_URL . '/assets/css/service-page-style.css',
+		array(),
+		filemtime( BYTEITFARM_THEME_DIR . '/assets/css/service-page-style.css' ),
+	);
+	wp_enqueue_style(
+		'contact-page-style.css',
+		BYTEITFARM_THEME_URL . '/assets/css/contact-page-style.css',
+		array(),
+		filemtime( BYTEITFARM_THEME_DIR . '/assets/css/contact-page-style.css' ),
+	);
 
 
 	// Register blog post style
@@ -72,16 +84,10 @@ function irisx_theme_enqueue_frontend_scripts() {
 		filemtime( BYTEITFARM_THEME_DIR . '/assets/css/single-posts.css' ),
 	);
 	wp_register_style(
-		'iris_single_post_categories',
-		BYTEITFARM_THEME_URL . '/assets/css/single-post-categories.css',
+		'byteitfarm_popular_blog_posts',
+		BYTEITFARM_THEME_URL . '/assets/css/popular-blog-posts.css',
 		array(),
-		filemtime( BYTEITFARM_THEME_DIR . '/assets/css/single-post-categories.css' ),
-	);
-	wp_register_style(
-		'byteitfarm_single_popular_blog_post',
-		BYTEITFARM_THEME_URL . '/assets/css/single-popular-blog-posts.css',
-		array(),
-		filemtime( BYTEITFARM_THEME_DIR . '/assets/css/single-popular-blog-posts.css' ),
+		filemtime( BYTEITFARM_THEME_DIR . '/assets/css/popular-blog-posts.css' ),
 	);
 	wp_register_style(
 		'byteitfarm_customer_reviews',
@@ -100,12 +106,6 @@ function irisx_theme_enqueue_frontend_scripts() {
 		BYTEITFARM_THEME_URL . '/assets/css/search-form.css',
 		array(),
 		filemtime( BYTEITFARM_THEME_DIR . '/assets/css/search-form.css' ),
-	);
-	wp_register_style(
-		'byteitfarm_most_popular_posts',
-		BYTEITFARM_THEME_URL . '/assets/css/most-popular-posts.css',
-		array(),
-		filemtime( BYTEITFARM_THEME_DIR . '/assets/css/most-popular-posts.css' ),
 	);
 
 }
